@@ -11,8 +11,7 @@ WORKDIR /data/src
 # Bundle app source
 COPY . /data
 
-RUN npm install
-RUN npm run start
+RUN npm install && npm run start
 # If you are building your code for production
 # RUN npm ci --omit=dev
 
