@@ -8,15 +8,14 @@ WORKDIR /data
 # where available (npm@5+)
 #COPY package*.json ./
 
-#RUN npm install
+# Bundle app source
+COPY . /data
+
+RUN npm install
 # If you are building your code for production
 # RUN npm ci --omit=dev
 
-# Bundle app source
-#COPY . .
+
 
 EXPOSE 8080
-#CMD [ "node", "/data/src/index.js" ]
-###
-#RUN node /data/src/index.js
-CMD [ "tail", "-f", "/dev/null" ]
+CMD [ "node", "/data/src/index.js" ]
