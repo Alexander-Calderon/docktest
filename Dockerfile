@@ -12,7 +12,7 @@ WORKDIR /data
 COPY . /data
 
 RUN npm install
-RUN npm run start
+#RUN npm run start
 # If you are building your code for production
 # RUN npm ci --omit=dev
 
