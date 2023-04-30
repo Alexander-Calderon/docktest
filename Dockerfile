@@ -18,5 +18,5 @@ RUN npm install
 
 
 EXPOSE 8080
-#CMD [ "node", "/data/src/index.js" ]
-CMD [ "tail", "-f", "/dev/null" ]
+CMD [ "node", "/data/src/index.js" ]
+#CMD [ "tail", "-f", "/dev/null" ]
