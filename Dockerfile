@@ -1,7 +1,7 @@
 FROM node:20
 
 # Create app directory
-WORKDIR /data
+WORKDIR /data/src
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -11,8 +11,8 @@ WORKDIR /data
 # Bundle app source
 COPY . /data
 
-#RUN npm install
-#RUN npm run start
+RUN npm install
+RUN npm run start
 # If you are building your code for production
 # RUN npm ci --omit=dev
 
