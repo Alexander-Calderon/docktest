@@ -9,7 +9,7 @@ WORKDIR /data/src
 #COPY package*.json ./
 
 # Bundle app source
-COPY ./code /data/src
+COPY ./ /data/src
 
 #RUN npm install && npm run start
 # If you are building your code for production
