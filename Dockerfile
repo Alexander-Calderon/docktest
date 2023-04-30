@@ -20,5 +20,5 @@ COPY . /data
 EXPOSE 8080
 #CMD [ "node", "/data/src/index.js" ]
 
-CMD ["npm", "install", "&&", "npm", "run", "start", "&&", "tail", "-f", "/dev/null"]
-#CMD [ "tail", "-f", "/dev/null" ]
+#CMD ["npm", "install", "&&", "npm", "run", "start", "&&", "tail", "-f", "/dev/null"]
+CMD [ "tail", "-f", "/dev/null" ]
